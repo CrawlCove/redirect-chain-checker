@@ -5,7 +5,7 @@
 export const DEFAULT_FOLLOW_OPTIONS = {
     maxHops: 10,
     timeoutMs: 10_000,
-    userAgent: 'crawlcove-redirect-chain-checker/1.0 (+https://github.com/CrawlCove/crawlcove-redirect-chain-checker)'
+    userAgent: 'crawlcove-redirect-chain-checker/1.0 (+https://github.com/CrawlCove/redirect-chain-checker)'
 };
 export const ALL_FINDING_CODES = [
     'chain',

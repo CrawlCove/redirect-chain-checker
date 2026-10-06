@@ -32,9 +32,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/CrawlCove/crawlcove-redirect-chain-checker.git"
+    "url": "https://github.com/CrawlCove/redirect-chain-checker.git"
   },
-  "homepage": "https://crawlcove.com/tools/redirect-checker?utm_source=github&utm_medium=crawlcove-redirect-chain-checker",
+  "homepage": "https://crawlcove.com/tools/redirect-checker?utm_source=github&utm_medium=redirect-chain-checker",
   "dependencies": {
     "commander": "^15.0.0"
   },

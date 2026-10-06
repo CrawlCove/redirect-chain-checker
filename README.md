@@ -2,16 +2,16 @@
 
 A redirect chain checker for the command line: follow every hop of a URL's redirects, see each status code and Location, and get told when a chain, loop, HTTPS downgrade, meta refresh or redirect-to-404 is costing you crawl budget and link equity. Exit code 1 in CI when it matters.
 
-Prefer a browser? The same check runs at [crawlcove.com/tools/redirect-checker](https://crawlcove.com/tools/redirect-checker?utm_source=github&utm_medium=crawlcove-redirect-chain-checker).
+Prefer a browser? The same check runs at [crawlcove.com/tools/redirect-checker](https://crawlcove.com/tools/redirect-checker?utm_source=github&utm_medium=redirect-chain-checker).
 
 ## Install
 
 ```sh
 # one-off, nothing installed (Node 18+):
-npx github:CrawlCove/crawlcove-redirect-chain-checker https://example.com/old-page
+npx github:CrawlCove/redirect-chain-checker https://example.com/old-page
 
 # global command, from the release tarball:
-npm install -g https://github.com/CrawlCove/crawlcove-redirect-chain-checker/archive/refs/tags/v1.0.0.tar.gz
+npm install -g https://github.com/CrawlCove/redirect-chain-checker/archive/refs/tags/v1.0.0.tar.gz
 redirect-chain-checker --version
 ```
 
@@ -64,21 +64,21 @@ Scheme-less URLs are tried over HTTPS. Exit codes: `0` clean (or only non-gated 
 
 ## Works with CrawlCove
 
-This checks the URLs you give it. [Crawl Cove](https://crawlcove.com/?utm_source=github&utm_medium=crawlcove-redirect-chain-checker), the desktop SEO crawler for Windows and Mac, finds every redirect chain across a whole site — including the internal links that point at the start of each chain, which is what you actually have to fix.
+This checks the URLs you give it. [Crawl Cove](https://crawlcove.com/?utm_source=github&utm_medium=redirect-chain-checker), the desktop SEO crawler for Windows and Mac, finds every redirect chain across a whole site — including the internal links that point at the start of each chain, which is what you actually have to fix.
 
 ## Related tools
 
-- [crawlcove-js](https://github.com/CrawlCove/crawlcove-js) — `crawlcove-export`, a typed JavaScript/TypeScript library to load, query and convert Crawl Cove exports.
-- [crawlcove-sheets](https://github.com/CrawlCove/crawlcove-sheets) — Google Sheets add-on that turns a Crawl Cove export into an audit workbook (issues by type, pages by status, title/meta flags).
-- [crawlcove-sf-import](https://github.com/CrawlCove/crawlcove-sf-import) — convert a Screaming Frog export into the Crawl Cove export format, with a report of what carried over.
-- [crawlcove-schema-validator](https://github.com/CrawlCove/crawlcove-schema-validator) — validate a page's JSON-LD against Google's required and recommended rich-result properties.
-- [crawlcove-hreflang-checker](https://github.com/CrawlCove/crawlcove-hreflang-checker) — check a page's or a sitemap's hreflang tags: codes, self-reference, x-default and return tags.
-- [crawlcove-cli](https://github.com/CrawlCove/crawlcove-cli) — headless whole-site crawl with redirect-chain, broken-link, title and noindex checks.
-- [crawlcove-action](https://github.com/CrawlCove/crawlcove-action) — the same checks as a GitHub Action on every PR.
-- [crawlcove-mcp](https://github.com/CrawlCove/crawlcove-mcp) — crawl data for Claude, Cursor and other AI assistants.
-- [crawlcove-export-spec](https://github.com/CrawlCove/crawlcove-export-spec) — the JSON Schema for Crawl Cove's crawl export.
-- [crawlcove-sitemap-validator](https://github.com/CrawlCove/crawlcove-sitemap-validator) — validate an XML sitemap or sitemap index against the protocol and search-engine limits.
-- [crawlcove-robots-txt-tester](https://github.com/CrawlCove/crawlcove-robots-txt-tester) — lint a robots.txt and test which URLs each crawler may fetch, with the deciding line.
+- [crawlcove-js](https://github.com/CrawlCove/seo-crawl-export-js) — `crawlcove-export`, a typed JavaScript/TypeScript library to load, query and convert Crawl Cove exports.
+- [crawlcove-sheets](https://github.com/CrawlCove/seo-audit-google-sheets) — Google Sheets add-on that turns a Crawl Cove export into an audit workbook (issues by type, pages by status, title/meta flags).
+- [crawlcove-sf-import](https://github.com/CrawlCove/screaming-frog-export-converter) — convert a Screaming Frog export into the Crawl Cove export format, with a report of what carried over.
+- [crawlcove-schema-validator](https://github.com/CrawlCove/schema-markup-validator) — validate a page's JSON-LD against Google's required and recommended rich-result properties.
+- [crawlcove-hreflang-checker](https://github.com/CrawlCove/hreflang-checker) — check a page's or a sitemap's hreflang tags: codes, self-reference, x-default and return tags.
+- [crawlcove-cli](https://github.com/CrawlCove/seo-crawler-cli) — headless whole-site crawl with redirect-chain, broken-link, title and noindex checks.
+- [crawlcove-action](https://github.com/CrawlCove/seo-audit-action) — the same checks as a GitHub Action on every PR.
+- [crawlcove-mcp](https://github.com/CrawlCove/seo-mcp-server) — crawl data for Claude, Cursor and other AI assistants.
+- [crawlcove-export-spec](https://github.com/CrawlCove/seo-crawl-export-spec) — the JSON Schema for Crawl Cove's crawl export.
+- [crawlcove-sitemap-validator](https://github.com/CrawlCove/xml-sitemap-validator) — validate an XML sitemap or sitemap index against the protocol and search-engine limits.
+- [crawlcove-robots-txt-tester](https://github.com/CrawlCove/robots-txt-tester) — lint a robots.txt and test which URLs each crawler may fetch, with the deciding line.
 
 ## License
 
