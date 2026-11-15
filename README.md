@@ -1,3 +1,5 @@
+<a href="https://crawlcove.com/download?utm_source=github&utm_medium=readme&utm_campaign=redirect-chain-checker"><img src="https://raw.githubusercontent.com/CrawlCove/.github/main/banners/redirect-chain-checker.svg" width="1200" alt="redirect-chain-checker: Follow every hop of a URL's redirects and flag chains, loops, HTTPS downgrades, meta refreshes and redirects to error pages." /></a>
+
 # crawlcove-redirect-chain-checker
 
 A redirect chain checker for the command line: follow every hop of a URL's redirects, see each status code and Location, and get told when a chain, loop, HTTPS downgrade, meta refresh or redirect-to-404 is costing you crawl budget and link equity. Exit code 1 in CI when it matters.
