@@ -8,7 +8,7 @@ Prefer a browser? The same check runs at [crawlcove.com/tools/redirect-checker](
 
 <img src="docs/demo.svg" width="980" alt="Terminal recording: the checker follows a trailing-slash 301, flags a meta refresh and an http to https hop on the SEO test site">
 
-*Recorded from a real run against [seo-test-site](https://github.com/CrawlCove/seo-test-site), a public site with 54 planted SEO problems that you can test against too.*
+*Recorded from a real run against [seo-test-site](https://github.com/CrawlCove/seo-test-site), a public site full of planted SEO problems that you can test against too.*
 
 ## Quick start
 
