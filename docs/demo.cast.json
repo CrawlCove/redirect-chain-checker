@@ -1,0 +1,84 @@
+{
+ "recorded": "2026-11-20T00:05:04.483Z",
+ "steps": [
+  {
+   "show": "npx github:CrawlCove/redirect-chain-checker https://crawlcove.github.io/seo-test-site/blog https://crawlcove.github.io/seo-test-site/blog/moved.html http://crawlcove.github.io/seo-test-site/",
+   "exit": 1,
+   "ms": 441,
+   "lines": [
+    {
+     "t": 430,
+     "text": "https://crawlcove.github.io/seo-test-site/blog"
+    },
+    {
+     "t": 431,
+     "text": "  301 → https://crawlcove.github.io/seo-test-site/blog/  (255 ms)"
+    },
+    {
+     "t": 431,
+     "text": "  ↳ 200  (49 ms)"
+    },
+    {
+     "t": 431,
+     "text": "  1 redirect → https://crawlcove.github.io/seo-test-site/blog/ (200)"
+    },
+    {
+     "t": 431,
+     "text": "  ✓ no findings"
+    },
+    {
+     "t": 431,
+     "text": ""
+    },
+    {
+     "t": 431,
+     "text": "https://crawlcove.github.io/seo-test-site/blog/moved.html"
+    },
+    {
+     "t": 431,
+     "text": "  200  (18 ms)"
+    },
+    {
+     "t": 431,
+     "text": "  0 redirects"
+    },
+    {
+     "t": 431,
+     "text": "  ! meta-refresh: https://crawlcove.github.io/seo-test-site/blog/moved.html redirects again with a meta refresh (0s → https://crawlcove.github.io/seo-test-site/blog/choosing-a-wick.html); search engines treat this as a weak redirect"
+    },
+    {
+     "t": 431,
+     "text": ""
+    },
+    {
+     "t": 431,
+     "text": "http://crawlcove.github.io/seo-test-site/"
+    },
+    {
+     "t": 431,
+     "text": "  301 → https://crawlcove.github.io/seo-test-site/  (31 ms)"
+    },
+    {
+     "t": 431,
+     "text": "  ↳ 200  (17 ms)"
+    },
+    {
+     "t": 431,
+     "text": "  1 redirect → https://crawlcove.github.io/seo-test-site/ (200)"
+    },
+    {
+     "t": 431,
+     "text": "  ! http-to-https: http://crawlcove.github.io/seo-test-site/ is reached over HTTP first; link to https://crawlcove.github.io/seo-test-site/ directly"
+    },
+    {
+     "t": 431,
+     "text": ""
+    },
+    {
+     "t": 431,
+     "text": "1 of 3 URL(s) have failing findings (chain, loop, too-many-hops, https-to-http, meta-refresh, redirect-to-error, fetch-error)."
+    }
+   ]
+  }
+ ]
+}
